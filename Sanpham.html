@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="site-header">
+    <div class="brand"><h1>Shop<span>Thể Thao</span></h1></div>
+    <button id="nav-toggle2" class="nav-toggle" aria-label="Mở menu">☰</button>
+    <nav class="site-nav" id="site-nav-2">
+      <a href="index.html">Trang Chủ</a>
+      <a href="sanpham.html" class="active">Sản Phẩm</a>
+      <a href="dichvu.html">Dịch Vụ</a>
+      <a href="gioithieu.html">Giới Thiệu</a>
+      <a href="lienhe.html">Liên Hệ</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Sản phẩm</h2>
+    <p>Chọn danh mục hoặc lọc để tìm sản phẩm phù hợp.</p>
+
+    <div class="controls">
+      <label>Danh mục:
+        <select id="category">
+          <option value="all">Tất cả</option>
+          <option value="giay">Giày</option>
+          <option value="ao">Áo</option>
+          <option value="phukien">Phụ kiện</option>
+        </select>
+      </label>
+      <label>Khoảng giá:
+        <select id="price-range">
+          <option value="all">Tất cả</option>
+          <option value="0-300">Dưới 300k</option>
+          <option value="300-800">300k - 800k</option>
+          <option value="800-9999999">Trên 800k</option>
+        </select>
+      </label>
+    </div>
+
+    <div class="grid products-grid" id="products-grid">
+
+      <article class="product-card" data-category="giay" data-price="1250000" id="prorun">
+        <img src="https://cf.shopee.vn/file/6436bb4840fce4c547f48f79d5841f6d" alt="Giày ProRun">
+        <h3>Giày thể thao</h3>
+        <p class="price">1.250.000₫</p>
+        <p>Đệm êm, thích hợp chạy bộ đường dài.</p>
+        <button class="btn buy" data-name="Giày chạy ProRun" data-price="1250000">Mua ngay</button>
+      </article>
+
+      <article class="product-card" data-category="ao" data-price="290000" id="quickdry">
+        <img src="https://aressport.vn/wp-content/uploads/2020/04/%C3%81o-b%C3%B3ng-%C4%91%C3%A1-t%E1%BB%B1-thi%E1%BA%BFt-k%E1%BA%BF-4.jpg" alt="Bộ đồ thể thao">
+        <h3>Bộ đồ thể thao</h3>
+        <p class="price">290.000₫</p>
+        <p>Vải thoáng mát, thấm hút tốt cho tập luyện.</p>
+        <button class="btn buy" data-name="Bộ đồ thể thao" data-price="290000">Mua ngay</button>
+      </article>
+
+      
+      <article class="product-card"  data-price="420000" >
+        <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lmfw44olzd9b81" alt="Balo">
+        <h3>Balo thể thao</h3>
+        <p class="price">420.000₫</p>
+        <p>Thiết kế nhiều ngăn, chống nước nhẹ.</p>
+        <button class="btn buy" data-name="Balo thể thao" data-price="420000">Mua ngay</button>
+      </article>
+
+      
+      <article class="product-card"  data-price="150000" >
+        <img src="https://vn-test-11.slatic.net/p/4f05443ace608275293c9379f596f680.png" alt="Phụ kiện">
+        <h3>Bình xịt khử mùi giày nano bạc XIMO XI28 - MixASale</h3>
+        <p class="price">50.000₫</p>
+        <p>Kháng khuẩn,khử mùi,tạo hương thơm.</p>
+        <button class="btn buy" data-name="Bình xịt khử mùi giầy nano bạc XIMO XI28" data-price="50000">Mua ngay</button>
+      </article>
+
+    </div>
+
+    <div id="cart" class="cart">
+      <h3>Giỏ hàng (tạm)</h3>
+      <div id="cart-items">Chưa có sản phẩm</div>
+      <div class="cart-actions">
+        <button id="checkout" class="btn">Thanh toán</button>
+        <button id="clear-cart" class="btn ghost">Xóa</button>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><h4>Shop Thể Thao</h4><p>Hotline: <a href="tel:0900123456">0911 123 456</a></p></div>
+      <div><h4>Địa chỉ</h4><p>123,Phường phú lợi, TP.Cần thơ</p></div>
+      <div><h4>Liên kết</h4><a href="index.html">Trang Chủ</a></div>
+    </div>
+    <div class="copyright">© 2025 Shop Thể Thao</div>
+  </footer>
+</body>
+</html>
