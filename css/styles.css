@@ -36,6 +36,11 @@ margin:0;color:#222;background:#f6f6f6;line-height:1.5}
     background:transparent;
     border:0;font-size:22px
 }
+nav a:hover {
+    color: orangered;
+    background-color: yellow;
+}
+
 .hero{
     display:grid;
     grid-template-columns:1fr 1fr;
